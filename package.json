@@ -1,0 +1,20 @@
+{
+  "name": "mono",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "just-vm",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "src",
+    "types",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && tsup"
+  },
+  "dependencies": {
+    "tsyringe": "^4.8.0"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.2.4",
+    "react": "^18.3.1",
+    "@types/node": "^20.14.14",
+    "@types/react": "^18.2.47",
+    "@types/react-dom": "^18.2.18"
+  },
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": false,
+    "clean": true,
+    "format": [
+      "esm",
+      "cjs"
+    ]
+  }
+}
