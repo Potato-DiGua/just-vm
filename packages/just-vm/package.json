@@ -13,6 +13,10 @@
       "types": "./types/index.d.ts"
     }
   },
+  "author": "Potato-DiGua",
+  "homepage": "https://github.com/Potato-DiGua/just-vm",
+  "repository": "https://github.com/Potato-DiGua/just-vm",
+  "bugs": "https://github.com/Potato-DiGua/just-vm/issues",
   "files": [
     "src",
     "types",
