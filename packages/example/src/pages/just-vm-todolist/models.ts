@@ -1,11 +1,9 @@
-import { Dolphins } from "./dolphins/dolphins.vm";
-import { Sharks } from "./sharks/sharks.vm";
-import { Question } from "./questions/questions.vm";
+import { Dolphins } from "./todo-list/ToDoList.vm";
+import { PageViewModel } from "./page/page.vm";
 
 export const storeViewModels = {
   dolphins: Dolphins,
-  sharks: Sharks,
-  questions: Question,
+  page: PageViewModel,
 } as const;
 
 type GetPrototype<T extends Record<string, new (...args: any[]) => any>> = {

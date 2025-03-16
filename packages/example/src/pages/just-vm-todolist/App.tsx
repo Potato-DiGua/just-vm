@@ -1,10 +1,12 @@
 import "./App.css";
-import Count from "./Count";
+import CreateToDo from "./create-todo";
+import ToDoList from "./todo-list";
 
 function App() {
   return (
-    <div className="App">
-      <Count />
+    <div className="App" style={{ display: "flex", flexDirection: "column" }}>
+      <CreateToDo />
+      <ToDoList />
     </div>
   );
 }

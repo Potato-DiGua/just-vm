@@ -33,13 +33,14 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "immer": "^9.0.21",
+    "just-vm": "workspace:*",
+    "lodash": "^4.17.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.1.2",
     "redux": "^5.0.1",
     "reflect-metadata": "^0.2.2",
-    "tsyringe": "^4.8.0",
-    "just-vm": "workspace:*"
+    "tsyringe": "^4.8.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
@@ -49,6 +50,7 @@
     "@babel/preset-env": "^7.25.3",
     "@babel/preset-typescript": "^7.24.7",
     "@rollup/plugin-babel": "^6.0.4",
+    "@types/lodash": "^4.17.13",
     "@types/node": "^20.14.14",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",

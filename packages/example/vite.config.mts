@@ -25,13 +25,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        rematch: path.resolve(__dirname, "./src/pages/rematch/index.html"),
-        just: path.resolve(__dirname, "./src/pages/just/index.html"),
+        just: path.resolve(__dirname, "./src/pages/just-vm/index.html"),
+        justtodolist: path.resolve(__dirname, "./src/pages/just-vm-todolist/index.html"),
       },
     },
   },
   server: {
-    open: "/src/pages/just/index.html",
+    open: "/src/pages/just-vm-todolist/index.html",
     host: true,
   },
 });

@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { Provider } from "just-vm";
-import { store, store2 } from "./store";
+import { store } from "./store";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -12,13 +12,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <div>
       <Provider value={store}>
         <App />
       </Provider>
-      <Provider value={store2}>
-        <App />
-      </Provider>
-    </div>
   </React.StrictMode>
 );
